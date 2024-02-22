@@ -16,6 +16,6 @@ class Solution:
             if i > 0:
                 ans += (stack[i] - stack[i - 1]) * (n - stack[i]) * arr[stack[i]]
             else:
-                ans += (stack[i] + 1) * (n - stack[i]) * arr[stack[i]] # Modification: Correcting the calculation for single element in stack
+                ans += (stack[i] + 1) * (n - stack[i]) * arr[stack[i]] 
         
         return ans % (10**9 + 7)
